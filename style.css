@@ -1,0 +1,94 @@
+:root {
+  --font-family: "Times New Roman";
+  --font-huge: 24px;
+  --font-large: 18px;
+  --font-regular: 16px;
+  --font-small: 14px;
+
+  --background-color: greenyellow;
+  --title-text-color: orangered;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-text-color);
+  text-shadow: 3px 2px 5px black;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+
+  font-size: var(--font-huge);
+}
+
+main h2 {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.yxi-cross {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  font-size: 40px;
+}
+
+.yxi-cross-vertical {
+  width: 300px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-right: 12px;
+}
+
+.listen-links {
+  width: 500px;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+.listen-links a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.listen-links img {
+  width: 54px;
+  height: 54px;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: 300px;
+  }
+  img {
+    width: 300px;
+  }
+
+  main h2 {
+    width: 300px;
+  }
+
+  .listen-links {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+}
