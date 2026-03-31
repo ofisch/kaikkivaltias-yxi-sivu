@@ -1,25 +1,33 @@
+@font-face {
+  font-family: "EB Garamond";
+  src: url("./fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+}
+
 :root {
-  --font-family: "Times New Roman";
+  --font-family: "EB Garamond", serif;
   --font-huge: 24px;
   --font-large: 18px;
   --font-regular: 16px;
   --font-small: 14px;
 
-  --background-color: greenyellow;
+  --background-color: #d5dd69;
   --title-text-color: orangered;
   --text-color: black;
 }
 
 body {
   background-color: var(--background-color);
+  font-family: 'EB Garamond', serif;
 }
+
+
 
 h1,
 h2,
 h3,
 h4 {
   color: var(--title-text-color);
-  text-shadow: 3px 2px 5px black;
+  /*text-shadow: 3px 2px 5px black;*/
 }
 
 main {
@@ -33,7 +41,52 @@ main {
 }
 
 main h2 {
-  width: 500px;
+  width: 800px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 15em;
+}
+
+#kaikkivaltias-title {
+  font-size: 5em;
+      margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #kaikkivaltias-title {
+    font-size: 3em;
+  }
+}
+
+#yxi-text {
+    top: 867px;
+    font-size: 52px;
+}
+
+@media screen and (max-width: 768px) {
+  #yxi-text {
+            top: 805px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #yxi-text {
+            top: 575px;
+                  width: 100%;
+  }
+}
+
+#yxi-input {
+  max-width: 500px;
+  font-size: var(--font-huge);
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.yxi-manifesto {
   display: flex;
   justify-content: space-between;
 }
@@ -42,7 +95,7 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+ 
   font-size: 40px;
 }
 
@@ -75,12 +128,14 @@ main h2 {
   height: 54px;
 }
 
+
+
 @media screen and (max-width: 500px) {
   main {
-    width: 300px;
+    width: 450px;
   }
   img {
-    width: 300px;
+    width: 450px;
   }
 
   main h2 {

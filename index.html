@@ -4,26 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Kaikkivaltias</title>
   </head>
   <body>
     <main>
-      <h1>Kaikkivaltias</h1>
 
-      <img src="https://placecats.com/500/500" alt="kisu" />
+     <!-----> <h1 id="kaikkivaltias-title">Kaikkivaltias</h1>
 
-      <h2>
+      <img style="max-width: 800px;" src="./img/kansiIlmanmitaa.jpg" alt="kisu" />
+
+      <!-- iso YXI otsiko -->
+
+      <h2 id="yxi-text">
         <span>Y</span>
         <span>X</span>
         <span>I</span>
       </h2>
 
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae nam
-        voluptates unde amet assumenda accusantium maiores nobis dolore eos. Vel
-        sunt ad corporis doloribus inventore blanditiis eligendi, expedita
-        asperiores laudantium.
+      <input type="text" placeholder="YXI" id="yxi-input" value="YXI"/>
+
+      <!---Yxi manifesti-->
+
+      <p class="yxi-manifesto">
+       
+The introduction of this album: "YXI eli ensimmäinen lucu Kaikkivaltiaan historiasa" translates to "ONE or the first chapter in the history of Kaikkivaltias". 
+<br><br>
+All the earlier releases were a prologue. The earliest riffs on this album were written in 2022. Each release has influenced this record. Everyone of them is a building block for this album. 
+<br><br>
+YXI is the first chapter because it is the first fully realized version of Kaikkivaltias.
+<br><br>
+Enter the world of Kaikkivaltias. A vibrant, lush finnish summer set in a romantic time long gone.
+ <br><br>
+Listen to YXI - and enter the world of Kaikkivaltias.
+
+
       </p>
+
+      <!---yxi risti-->
 
       <div class="yxi-cross">
         <div><h3>Y</h3></div>
@@ -35,10 +53,12 @@
         <div><h3>I</h3></div>
       </div>
 
+      <!---kuuntelulinkit-->
+
       <div class="listen-links">
         <a href="https://kaikkivaltias.bandcamp.com"
           ><img src="./img/bancamp-logo.png" alt="bandcamp logo" />Bandcamp</a
-        >
+        > 
         <a href=""
           ><img src="./img/deezer-logo.png" alt="Deezer logo" />Deezer</a
         >
@@ -52,4 +72,23 @@
       </footer>
     </main>
   </body>
+
+  <script>
+    const yxiText = document.querySelector("#yxi-text");
+
+    const yxiInput = document.querySelector("#yxi-input");
+
+    yxiInput.addEventListener("input", (event) => {
+      const inputValue = event.target.value.toUpperCase();
+      const letters = inputValue.split("");
+
+      yxiText.innerHTML = letters
+        .map((letter) => `<span>${letter}</span>`)
+        .join("");
+    });
+
+
+
+  </script>
+
 </html>
