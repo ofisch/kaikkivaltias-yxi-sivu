@@ -17,11 +17,11 @@
 
 body {
   background-color: var(--background-color);
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
 }
 
 a {
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
   color: var(--title-text-color);
 }
 
@@ -43,46 +43,21 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 800px;
-
   font-size: var(--font-huge);
 }
 
-main h2 {
-  width: 800px;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 15em;
-}
-
-#kaikkivaltias-title {
-  font-size: 5em;
-      margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-@media screen and (max-width: 768px) {
-  #kaikkivaltias-title {
-    font-size: 3em;
-  }
+#yxi-cover-img {
+  max-width: 75%;
 }
 
 #yxi-text {
-        top: 824px;
-    font-size: 52px;
-}
-
-@media screen and (max-width: 768px) {
-  #yxi-text {
-            top: 805px;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  #yxi-text {
-            top: 575px;
-                  width: 100%;
-  }
+  width: 75%;
+  height: 47px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -2em !important;
+  text-shadow: 2px 1px black !important;
 }
 
 #yxi-input {
@@ -90,7 +65,7 @@ main h2 {
   font-size: var(--font-huge);
   border: 2px solid black;
   text-align: center;
-  margin-top: 2em;
+  margin-top: -4em;
 }
 
 .yxi-manifesto {
@@ -103,7 +78,6 @@ main h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
   font-size: 40px;
 }
 
@@ -137,8 +111,6 @@ main h2 {
   height: 54px;
 }
 
-
-
 @media screen and (max-width: 500px) {
   main {
     width: 450px;
@@ -155,4 +127,10 @@ main h2 {
     width: 300px;
     flex-wrap: wrap;
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
