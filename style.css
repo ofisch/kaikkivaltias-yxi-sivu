@@ -50,6 +50,12 @@ main {
   max-width: 75%;
 }
 
+@media screen and (min-width: 2560px) {
+  #yxi-cover-img {
+    max-width: 100%;
+  }
+}
+
 #yxi-text {
   width: 75%;
   height: 47px;
@@ -58,6 +64,12 @@ main {
   position: relative;
   top: -2em !important;
   text-shadow: 2px 1px black !important;
+}
+
+@media screen and (min-width: 2560px) {
+  #yxi-text {
+    width: 100%;
+  }
 }
 
 #yxi-input {
