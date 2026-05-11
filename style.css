@@ -83,7 +83,21 @@ main {
 .yxi-manifesto {
   display: flex;
   justify-content: space-between;
+      flex-direction: column;
+}
+
+.yxi-manifesto p {
+  margin: 0;
   text-transform: uppercase;
+}
+
+.yxi-manifesto h3, h4 {
+  font-style: italic;
+      text-align: center;
+}
+
+.yxi-manifesto h4 {
+  margin-top: 0;
 }
 
 .yxi-cross {
