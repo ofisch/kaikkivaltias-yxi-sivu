@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Ambrosia";
+  src: url("./fonts/Ambrosia.ttf") format("truetype");
+}
+
+:root {
+  --font-family: "Ambrosia", serif;
+  --font-huge: 24px;
+  --font-large: 18px;
+  --font-regular: 16px;
+  --font-small: 14px;
+
+  --background-color: black;
+  --title-text-color: #f43d3d;
+  --text-color: black;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+a {
+  font-family: var(--font-family);
+  color: var(--title-text-color);
+}
+
+a:hover {
+  color: blue;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-text-color);
+  /*text-shadow: 3px 2px 5px black;*/
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  font-size: var(--font-huge);
+}
+
+#yxi-cover-img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 2560px) {
+  #yxi-cover-img {
+    max-width: 100%;
+  }
+}
+
+#yxi-text {
+  width: 100%;
+  height: 47px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -2em !important;
+  text-shadow: 2px 1px black !important;
+}
+
+@media screen and (min-width: 2560px) {
+  #yxi-text {
+    width: 100%;
+  }
+}
+
+#passio-title {
+  font-size: 200px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#yxi-input {
+  max-width: 500px;
+  font-size: var(--font-huge);
+  border: 2px solid black;
+  text-align: center;
+  margin-top: -4em;
+}
+
+.yxi-manifesto {
+  display: flex;
+  justify-content: space-between;
+      flex-direction: column;
+}
+
+.yxi-manifesto p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.yxi-manifesto h3, h4 {
+  font-style: italic;
+      text-align: center;
+}
+
+.yxi-manifesto h4 {
+  margin-top: 0;
+}
+
+.yxi-cross {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+
+.yxi-cross-vertical {
+  width: 300px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  margin-right: 12px;
+}
+
+.listen-links {
+  width: 500px;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+.listen-links a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.listen-links img {
+  width: 54px;
+  height: 54px;
+}
+
+@media screen and (max-width: 500px) {
+
+
+
+  main h2 {
+    width: 300px;
+  }
+
+  .listen-links {
+    width: 300px;
+    flex-wrap: wrap;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
