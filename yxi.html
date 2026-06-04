@@ -11,6 +11,7 @@
     <main>
       <!--<h1 id="kaikkivaltias-title">Kaikkivaltias</h1>--->
 
+      
       <img
         id="yxi-cover-img"
         style="margin-top: 1em"
@@ -28,55 +29,7 @@
 
       <input type="text" placeholder="YXI" id="yxi-input" value="YXI" />
 
-      <!---Yxi manifesti-->
 
-      <div class="yxi-manifesto">
-
-        <h3>is</h2>
-
-        <p>
-        Lush. Grandiose. Vibrant.
-        <br /><br />
-        </p>
-        <h3>it is about</h2>
-        <p>
-        Passion.
-        <br /><br />
-        Passion in many different forms, like passion for this world that is burning to ash as we speak.
-        <br /><br />
-       Passion in human connection: conversation, friendship, romance.
-        <br /><br />
-        Passion in peace, freedom and respect for one another. For Standing up and fighting for what is right.
-        <br /><br />
-       Passion for old stories and ancient legends, what we can learn from them even in this day and age.
-        <br /><br />
-     Passion for spirituality, the longing for a higher power and divine experiences.
-        <br /><br />
-      And ultimately passion for beauty and art, how art elevates life and makes it beautiful. How art deals with different topics of our lives and sparks discussion. How art is not luxury or elitist. How art should be accessible to everyone.
-        <br /><br />
-
-       Enter the world of Kaikkivaltias. A vibrant, lush finnish summer set in a romantic time long gone.
-        <br /><br />
-        Listen to YXI - and enter the world of Kaikkivaltias.
-        </p>
-
-        <h3>-Magus Olaus</h3>
-        <h4>MMXXVI</h4>
-       
-      </div>
-
-
-      <!---yxi risti-->
-
-      <div class="yxi-cross">
-        <div><h3>Y</h3></div>
-        <h3 class="yxi-cross-vertical">
-          <span>Y</span>
-          <span>X</span>
-          <span>I</span>
-        </h3>
-        <div><h3>I</h3></div>
-      </div>
 
       <!---kuuntelulinkit-->
 
@@ -90,6 +43,19 @@
         <a href=""
           ><img src="./img/spotify-logo.png" alt="Spotify logo" />Spotify</a
         >
+      </div>
+
+      
+      <!---yxi risti-->
+
+      <div class="yxi-cross">
+        <div><h3>Y</h3></div>
+        <h3 class="yxi-cross-vertical">
+          <span>Y</span>
+          <span>X</span>
+          <span>I</span>
+        </h3>
+        <div><h3>I</h3></div>
       </div>
 
       <footer>
@@ -113,5 +79,12 @@
         .map((letter) => `<span>${letter}</span>`)
         .join("");
     });
+
+    const yxiAlbumCover = document.querySelector("#yxi-cover-img");
+
+    yxiAlbumCover.addEventListener("click", () => {
+      window.location.href = "/info.html";
+    });
+
   </script>
 </html>

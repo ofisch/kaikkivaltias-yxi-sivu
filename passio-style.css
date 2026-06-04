@@ -50,6 +50,14 @@ main {
   max-width: 100%;
 }
 
+#yxi-cover-img:hover {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  scale: 1.05;
+  border: 1px solid #f43d3d;
+
+}
+
 @media screen and (min-width: 2560px) {
   #yxi-cover-img {
     max-width: 100%;
