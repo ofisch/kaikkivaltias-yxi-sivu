@@ -1,165 +1,67 @@
 @font-face {
-  font-family: "EB Garamond";
-  src: url("./fonts/EBGaramond-VariableFont_wght.ttf") format("truetype");
+  font-family: Ambrosia;
+  src: url(./fonts/Ambrosia.ttf);
+}
+
+@font-face {
+  font-family: Flagfies;
+  src: url(./fonts/Flagfies.otf);
 }
 
 :root {
-  --font-family: "EB Garamond", serif;
-  --font-huge: 24px;
-  --font-large: 18px;
-  --font-regular: 16px;
-  --font-small: 14px;
-
-  --background-color: #d5dd69;
-  --title-text-color: #f43d3d;
-  --text-color: black;
+  --color-red: #fc354c;
+  --color-blue: #0abfbc;
 }
 
 body {
-  background-color: var(--background-color);
-  font-family: "EB Garamond", serif;
-}
-
-a {
-  font-family: "EB Garamond", serif;
-  color: var(--title-text-color);
-}
-
-a:hover {
-  color: blue;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: var(--title-text-color);
-  /*text-shadow: 3px 2px 5px black;*/
+  background-color: black;
+  color: white;
+  display: flex;
 }
 
 main {
   margin: auto;
+  font-family: Ambrosia;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 800px;
-  font-size: var(--font-huge);
+  max-width: 100vw;
 }
 
-#yxi-cover-img {
-  max-width: 100%;
+#kaikkivaltias-title {
+  font-family: Flagfies;
+ font-style: italic;
+  color: var(--color-red);
+  font-size: 3em;
 }
 
-#yxi-cover-img:hover {
-  transition: transform 0.5s ease-in-out;
-  border: 1px solid black;
-  box-shadow: 2px 2px black;
-  cursor: pointer;
+main h1 {
+  font-size: 8em;
+  color: var(--color-blue);
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
-@media screen and (min-width: 2560px) {
-  #yxi-cover-img {
-    max-width: 100%;
-  }
-}
-
-#yxi-text {
-  width: 100%;
-  height: 47px;
+#banner-image img {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: -2em !important;
-  text-shadow: 2px 1px black !important;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
 }
 
-@media screen and (min-width: 2560px) {
-  #yxi-text {
-    width: 100%;
-  }
-}
-
-#yxi-input {
-  max-width: 500px;
-  font-size: var(--font-huge);
-  border: 2px solid black;
-  text-align: center;
-  margin-top: -4em;
-}
-
-.yxi-manifesto {
-  display: flex;
-  justify-content: space-between;
-      flex-direction: column;
-}
-
-.yxi-manifesto p {
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.yxi-manifesto h3, h4 {
-  font-style: italic;
-      text-align: center;
-}
-
-.yxi-manifesto h4 {
-  margin-top: 0;
-}
-
-.yxi-cross {
+#enter-password {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 40px;
-}
-
-.yxi-cross-vertical {
-  width: 300px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  margin-right: 12px;
-}
-
-.listen-links {
-  width: 500px;
-  display: flex;
   gap: 1em;
-  align-items: center;
-  align-content: center;
-  justify-content: space-evenly;
-  margin-top: 4em;
-  margin-bottom: 1em;
 }
 
-.listen-links a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5em;
+#enter-password input {
+  border: 1px 1px solid blue;
+  background-color:bisque;
+  height: 2em;
 }
 
-.listen-links img {
-  width: 54px;
-  height: 54px;
-}
+#enter-password button {
 
-@media screen and (max-width: 500px) {
-
-
-
-  main h2 {
-    width: 300px;
-  }
-
-  .listen-links {
-    width: 300px;
-    flex-wrap: wrap;
-  }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
