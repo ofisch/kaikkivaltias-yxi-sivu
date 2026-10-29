@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="archive.css">
+</head>
+<body>
+
+<div class="image-grid" id="imageGrid">
+  
+</div>
+
+<script>
+ 
+const images = [
+  ["hothothot.jpg", "Landscape"],
+  ["cool school.jpg", "Forest"],
+  ["promo.jpg", "Lake"],
+  ["loitsutorni.png", "Wildlife"],
+  ["IMG_5988.JPG", "Mountains"],
+  ["kansi-logolla.jpg", "Scenery"],
+  ["magus-kristallipallo.png", "Hills",],
+  ["magus-miekka.jpg", "Hills"],
+  ["sinine.jpg", "Blue",],
+  ["find-out.png", "find out", "youtube.com"]
+];
+
+const grid = document.getElementById("imageGrid");
+
+images.forEach(([filename, alt, link]) => {
+  const img = document.createElement("img");
+  img.src = `./img/${filename}`;
+  img.alt = alt;
+  img.loading = "lazy";
+
+  if (link) {
+    const a = document.createElement("a");
+    a.href = link;
+    a.appendChild(img);
+    grid.appendChild(a);
+  } else {
+    grid.appendChild(img);
+  }
+});
+
+</script>
+
+</body>
+</html>

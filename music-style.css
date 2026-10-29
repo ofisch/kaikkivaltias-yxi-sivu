@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Ambrosia;
+  src: url(./fonts/Ambrosia.ttf);
+}
+
+@font-face {
+  font-family: Flagfies;
+  src: url(./fonts/Flagfies.otf);
+}
+
+:root {
+  --color-red: #fc354c;
+  --color-blue: #0abfbc;
+}
+
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: larger;
+}
+
+
+main {
+    margin: auto;
+    font-family: Ambrosia;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+}
+
+main h1 {
+        color: var(--color-red);
+        font-family: Flagfies;
+        font-weight: 100;
+}
+
+.links {
+    font-size: 1.3em;
+}
+
+a {
+  color: var(--color-blue);
+}
+
+.image img {
+  width: 21em;
+    position: absolute;
+    margin-top: -25em;
+    margin-left: 7em;
+}
+
+.pirate-skull img {
+    width: 100px;
+}
