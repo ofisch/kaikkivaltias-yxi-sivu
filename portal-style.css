@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Ambrosia;
+  src: url(./fonts/Ambrosia.ttf);
+}
+
+
+@font-face {
+  font-family: Flagfies;
+  src: url(./fonts/Flagfies.otf);
+}
+
+:root {
+  --color-red: #fc354c;
+  --color-blue: #0abfbc;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+main {
+  margin: auto;
+  font-family: Ambrosia;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+}
+
+#kaikkivaltias-title {
+  font-family: Flagfies;
+ font-style: italic;
+  color: var(--color-red);
+  font-size: 3em;
+}
+
+main h1 {
+  font-size: 8em;
+  color: var(--color-blue);
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#banner-image img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+}
+
+.link-list {
+    list-style-type: none;
+    font-size: 2em;
+    
+}
